@@ -6,7 +6,7 @@
 |email|string|null: false|
 |password|string|null: false|
 ### Association
-- has_many :messagess
+- has_many :messages
 - has_many :groups, through: :users_groups
 
 ## groupsテーブル
@@ -25,8 +25,8 @@
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :users
-- belongs_to :groups
+- belongs_to :user
+- belongs_to :group
 
 ## groups_usersテーブル
 |Column|Type|Options|
