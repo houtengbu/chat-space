@@ -35,11 +35,11 @@
 
   .chat-main__form
     .input-box
-      %input#message_content.input-box__text{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
-      %label.input-box__image{:for => "message_image"}
+      %input#message_content.input-box__text{name: "message[content]", placeholder: "type a message", type: "text"}/
+      %label.input-box__image{for: "message_image"}
         = icon('fas', 'image')
-        %input#message_image.input-box__image__file{:name => "message[image]", :type => "file", :style => "display: none"}/ 
-    %input.submit-btn{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}/
+        %input#message_image.input-box__image__file{name: "message[image]", type: "file", style: "display: none"}/ 
+    %input.submit-btn{data-disable-with: "Send", name: "commit", type: "submit", value: "Send"}/
 
 
 
