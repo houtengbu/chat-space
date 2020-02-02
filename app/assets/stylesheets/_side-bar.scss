@@ -13,13 +13,48 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-      background-color: white;
+      // background-color: white;
       font-weight: bold;
+      line-height: center;
+      color: white;
+      &__icon{
+        width: 60px;
+        display: flex;
+        justify-content: flex-end;
+        // background-color:red;
+        &__icon1{
+          margin-right: 5px;
+        }
+        &__icon2{
+          text-align: right;
+        }
+      }
     }
   }
 
   &__group-list{
     height: calc(100% - 100px);
+    padding:0px 20px;
     background-color: #2f3e51;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__box{
+      height: 80px;
+      width: 100%;
+      color: white;
+      &__name{
+        padding-top: 20px;
+        font-size: 15px;
+        padding-bottom: 5px;
+      }
+      &__line{
+        font-size: 11px;
+      }
+    }
   }
+}
+
+.fa-white{
+  color:#ffffff;
 }
