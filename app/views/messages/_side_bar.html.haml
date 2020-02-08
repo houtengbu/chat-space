@@ -2,28 +2,29 @@
   .side-bar__user-name
     .side-bar__user-name__box
       .side-bar__user-name__box__name
-        %p hoge
+        = current_user.name
       %ul.side-bar__user-name__box__icon
         %li.side-bar__user-name__box__icon__icon1
           %i.fa.fa-edit.fa-white
         %li.side-bar__user-name__box__icon__icon2
-          %i.fa.fa-cog.fa-white
+          = link_to edit_user_path(current_user) do
+            %i.fa.fa-cog.fa-white
 
   .side-bar__group-list
     .side-bar__group-list__box
       .side-bar__group-list__box__name
-        %p hogehoge
+        hogehoge
       .side-bar__group-list__box__line
-        %p まだメッセージがありません
+        まだメッセージがありません
     .side-bar__group-list__box
       .side-bar__group-list__box__name
-        %p hogehogeo
+        hogehogeo
       .side-bar__group-list__box__line
-        %p まだメッセージがありません 
+        まだメッセージがありません 
     .side-bar__group-list__box
       .side-bar__group-list__box__name
-        %p hogehogeo
+        hogehogeo
       .side-bar__group-list__box__line
-        %p まだメッセージがありません    
+        まだメッセージがありません    
 
 
