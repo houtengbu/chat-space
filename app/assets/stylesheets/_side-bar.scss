@@ -37,18 +37,22 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    &__box{
-      height: 80px;
-      width: 100%;
+  }
+  .group{
+    height: 80px;
+    width: 100%;
+    a{
+      text-decoration: none;
+    }
+    &__name{
+      padding-top: 20px;
+      font-size: 15px;
+      padding-bottom: 5px;
       color: white;
-      &__name{
-        padding-top: 20px;
-        font-size: 15px;
-        padding-bottom: 5px;
-      }
-      &__line{
-        font-size: 11px;
-      }
+    }
+    &__message{
+      font-size: 11px;
+      color: white;
     }
   }
 }
@@ -56,3 +60,5 @@
 .fa-white{
   color:#ffffff;
 }
+
+
