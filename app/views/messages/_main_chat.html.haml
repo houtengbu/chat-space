@@ -12,8 +12,7 @@
             = user.name
     .chat-main__group-info__btn
       = link_to "Edit", edit_group_path(@group)
-  .chat-main__message-list
-    .messages
+  .messages
     = render @messages
   
   .chat-main__form

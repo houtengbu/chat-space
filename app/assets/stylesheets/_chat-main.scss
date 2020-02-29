@@ -46,10 +46,11 @@
     }
   }
 
-  &__message-list{
+  .messages{
     background-color: #fafafa;
     height: calc(100vh - 190px);
     padding:0px 40px;
+    overflow: scroll; 
     .message{
       .upper-message{
         display: flex;
@@ -71,8 +72,8 @@
         margin-top: 12px;
         font-size: 14px;
         color: #434a54
-      }
-    }
+      }      
+    } 
   }
 
   &__form{
